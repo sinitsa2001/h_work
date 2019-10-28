@@ -7,22 +7,26 @@
 # фирмы в расчете на одного сотрудника.
 revenue = int(input('Введите выручку предприятия: '))
 cost = int(input('Введите издержки предприятия: '))
-staff = int(input('Сколько людей работает на предприятии: '))
+
 if revenue > cost:
     print('Предприятие прибыльно')
+    staff = int(input('Сколько людей работает на предприятии: '))
+    profit = revenue - cost
+    prodact = ('{:.2f}'.format(profit / staff))
+    print(f'Рентабельность предриятия равна: {prodact} %')
 else:
     print('Предприятие убыточно')
-profit = revenue - cost
-prodact = ('{:.2f}'.format(profit / staff))
-print (f'Рентабельность предриятия равна: {prodact} %')
+
 #вариант2
 revenue = int(input('Введите выручку предприятия: '))
 cost = int(input('Введите издержки предприятия: '))
-staff = int(input('Сколько людей работает на предприятии: '))
 profit = revenue - cost
 if profit >0:
     print('Предприятие прибыльно!')
+    staff = int(input('Сколько людей работает на предприятии: '))
+    prodact = ('{:.2f}'.format(profit / staff))
+    print (f'Рентабельность предриятия равна: {prodact} %')
 else:
     print('Предприятие убыточно')
-prodact = ('{:.2f}'.format(profit / staff))
-print (f'Рентабельность предриятия равна: {prodact} %')
+
+
