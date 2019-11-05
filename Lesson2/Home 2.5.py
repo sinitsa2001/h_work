@@ -11,9 +11,22 @@
 # например, my_list = [7, 5, 3, 3, 2].
 
 my_list = [7, 5, 3, 3, 2]
+print(type(my_list))
+list.index(1,[])
 n=int(input('Новый элемент рейтинга !целое число!: '))
-my_list.append(n)
+
+#for count in my_list:
+
+#for n in range(len(my_list)):
+#    if n <
+#print(m)
+
+#my_list.append(n)
+#for n in my_list:
+ #   if n =
 print(my_list)
 n_list = sorted(my_list)
 print(n_list[::-1])
 
+#list.insert(i, x)
+#list.index(x, [start [, end]])
