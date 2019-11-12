@@ -37,3 +37,11 @@ print(list_2)
 '''mylist = [2,32,33,50,50,3,3, 5,7,20, 30, 25, 20]
 list_3 = [i for i,x in mylist if my_list.count(x)<=1]
 print(list_3)'''
+
+
+from random import randint
+
+my_list = [randint(5, 10) for i in range(4)]
+list_2 = [i for i, x in enumerate(my_list) if my_list.count(x) <= 1]
+print(my_list)
+print(list_2)

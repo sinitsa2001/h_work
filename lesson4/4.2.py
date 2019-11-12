@@ -4,6 +4,8 @@
 # Для формирования списка использовать генератор.
 from functools import reduce
 from collections import Counter
+
+assert isinstance(randint,object )
 from random import randint
 
 mylist = [randint(-10, 10) for i in range(20)]
