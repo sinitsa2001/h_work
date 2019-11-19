@@ -1,5 +1,3 @@
-
-
 class Clothes:
     def __init__(self, param):
         self.param = param
@@ -27,11 +25,12 @@ print(cl_1.coat_metod())
 
 
 class Suit(Clothes):
-    def init (self, param):
+    def init(self, param):
         Clothes.__init__(self, param)
 
     def suit_metod(self):
-            return f'Для пошива Вашего костюма {cl_2.param}потребуется: {round((self.param * 2  + 0.3), 2)} погонных метра ткани'
+        return f'Для пошива Вашего костюма {cl_2.param}потребуется: {round((self.param * 2 + 0.3), 2)} погонных метра ткани'
 
-cl_2 =Suit(int(input('Введите параметр костюма')))
+
+cl_2 = Suit(int(input('Введите параметр костюма')))
 print(cl_2.suit_metod())
